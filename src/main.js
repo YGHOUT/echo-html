@@ -1,14 +1,26 @@
 import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
+import './plugins/axios'
+import App from '@/App.vue'
+import router from '@/router'
 import axios from 'axios'
-import './router/mocks'
+import '@/assets/css/global.css'
+import '@/router/mocks'
+
 import {
     Container,
     Header,
     Main,
-    Footer
+    Footer,
+    Card,
+    Form,
+    FormItem,
+    Input,
+    Tabs,
+    TabPane,
+    Button
 } from 'element-ui'
+
+import './plugins/element.js'
 
 Vue.config.productionTip = false
 // 设置axios 的基础路由
@@ -20,6 +32,13 @@ Vue.use(Container)
 Vue.use(Header)
 Vue.use(Main)
 Vue.use(Footer)
+Vue.use(Card)
+Vue.use(Form)
+Vue.use(FormItem)
+Vue.use(Input)
+Vue.use(Tabs)
+Vue.use(TabPane)
+Vue.use(Button)
 new Vue({
   router,
   render: h => h(App)
