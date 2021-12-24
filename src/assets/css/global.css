@@ -1,0 +1,20 @@
+html,body,#app{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#app{
+    background-color: #353846;
+    color: white;
+}
+.el-header{
+    background-color: #818286;
+    display: flex;
+    justify-content: space-between;
+}
+.color-white{
+    color: white;
+}
+.color-primary{
+    color: #9d56ae;
+}
