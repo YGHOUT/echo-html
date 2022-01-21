@@ -1,16 +1,21 @@
 <template>
-  <div id="app">
+<el-container id="app">
+  <el-header>
+    <Nav/>
+  </el-header>
+  <el-main>
     <router-view></router-view>
-  </div>
+  </el-main>
+</el-container>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Nav from "@/components/Nav";
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Nav
   }
 }
 </script>

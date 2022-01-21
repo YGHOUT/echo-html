@@ -1,13 +1,12 @@
 <template>
-  <div>
-
-<el-input placeholder="测试"/>
-  </div>
+<div>
+  私信
+</div>
 </template>
 
 <script>
 export default {
-  name: "test"
+  name: "PrivateLetter"
 }
 </script>
 

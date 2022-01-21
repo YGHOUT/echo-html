@@ -2,19 +2,53 @@ html,body,#app{
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color: #353846;
 }
 #app{
-    background-color: #353846;
-    color: white;
+    min-width: 1460px;
 }
 .el-header{
+    color: white;
     background-color: #818286;
     display: flex;
     justify-content: space-between;
 }
-.color-white{
-    color: white;
-}
 .color-primary{
     color: #9d56ae;
+}
+/*首页推荐产品卡片*/
+.echo-recommend-card {
+/*    width: 255px;*/
+/*    height: 445px;*/
+/*    margin: 10px 3px;*/
+/*!*    向右浮动*!*/
+/*    float:left ;*/
+/*    flex-flow: row wrap;*/
+}
+/*首页推荐产品卡片*/
+.echo-recommend-card:hover{
+    cursor: pointer;
+}
+.echo-recommend-card-icon{
+    height: 30px;width: 30px;margin-right: 15px;vertical-align:middle
+}
+.echo-product-amount{
+    color: #42b983;
+}
+/*商品推荐界面上边界10px*/
+.echo-recommend-card-span-margin-top{
+    margin-top: 10px;
+}
+/*修改下拉菜单样式*/
+.el-dropdown-menu__item:not(.is-disabled):hover{
+    background-color: #9d56ae !important;
+    color: white !important;
+}
+/*修改顶部栏输入框的大小*/
+.nav-header .el-input__inner{
+    height: 30px !important;
+}
+/*悬浮变小手*/
+.echo-hover-pointer{
+    cursor: pointer;
 }
